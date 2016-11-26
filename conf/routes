@@ -9,6 +9,9 @@ GET     /                     controllers.HomeController.index(name: String ?="v
 GET     /about                      controllers.HomeController.about
 
 GET     /products                   controllers.HomeController.products
+GET     /addproduct                 controllers.HomeController.addProduct
+GET     /delProduct/:id                 controllers.HomeController.deleteProduct(id: Long)
+POST    /addProductSubmit           controllers.HomeController.addProductSubmit
 
 # An example controller showing how to use dependency injection
 GET     /count                      controllers.CountController.count
